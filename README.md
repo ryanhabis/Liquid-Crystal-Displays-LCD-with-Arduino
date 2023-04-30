@@ -6,15 +6,6 @@ The first line includes the LiquidCrystal library, which is required to communic
 
 The second section defines the pins used to communicate with the LCD. The variables rs, en, d4, d5, d6, and d7 represent the pins connected to the LCD's RS, EN, D4, D5, D6, and D7 pins, respectively.
 
-The LiquidCrystal object is then created using the variables defined in step 2.
-
-In the setup() function, the LCD is initialized by calling the lcd.begin() function, which sets the number of columns and rows of the display. In this case, the display has 16 columns and 2 rows. The lcd.print() function is then called to print "hello, world!" on the first row of the display.
-
-In the loop() function, the lcd.setCursor() function is used to set the cursor to the first column of the second row. The lcd.print() function is then called to print the number of seconds since the Arduino board was last reset. The millis() function returns the number of milliseconds that have elapsed since the board was reset, so dividing this value by 1000 gives the number of seconds.
-
-Overall, this code initializes the LCD screen and displays a message on the first row of the screen. It then continuously updates the second row of the screen with the number of seconds that have elapsed since the board was last reset.
-
-
 # To wire your LCD screen to your board, connect the following pins:
 
 * LCD RS pin to digital pin 12
