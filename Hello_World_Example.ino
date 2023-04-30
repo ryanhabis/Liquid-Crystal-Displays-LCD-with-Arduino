@@ -1,4 +1,10 @@
+/**
+In the setup() function, the LCD is initialized by calling the lcd.begin() function, which sets the number of columns and rows of the display. In this case, the display has 16 columns and 2 rows. The lcd.print() function is then called to print "hello, world!" on the first row of the display.
 
+In the loop() function, the lcd.setCursor() function is used to set the cursor to the first column of the second row. The lcd.print() function is then called to print the number of seconds since the Arduino board was last reset. The millis() function returns the number of milliseconds that have elapsed since the board was reset, so dividing this value by 1000 gives the number of seconds.
+
+Overall, this code initializes the LCD screen and displays a message on the first row of the screen. It then continuously updates the second row of the screen with the number of seconds that have elapsed since the board was last reset.
+*/
 
 // include the library code:
 #include <LiquidCrystal.h>
